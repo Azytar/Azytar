@@ -1,39 +1,15 @@
-# Axiom
+![Azytar — Systems, graphics and computation](assets/horizon.svg)
 
-> **"Everybody lies. But the compiler doesn't."**
->
-> I borrowed the first half from Dr. House. The second half passed the borrow checker.
+I build software for Linux and explore the systems behind it, from window management to GPU rendering.
 
-## Stage 1: Denial
+### Projects
 
-*"I like keeping things simple."*
+**[Maverick](https://github.com/Azytar/Maverick)** — Scroll-based tiling window manager for X11.
 
-I write Rust software for Linux. I like small systems, understandable code, and knowing how things work.
+**[Aura](https://github.com/Azytar/Aura)** — Terminal emulator with a custom text stack and Vulkan renderer.
 
-Unfortunately, getting there sometimes involves a suspicious amount of engineering.
-
-## Case history
-
-- **[Maverick](https://github.com/Azytar/Maverick)** — A deliberately minimal X11 window manager in Rust. No desktop environment, no unnecessary extras, no complications. Well, that last part is debatable.
-- **[Aura](https://github.com/Azytar/Aura)** — A terminal emulator with its own VT core, Unicode handling, font rendering, and a Vulkan backend. All that to display text. It seemed reasonable at the time.
-- **[maverickctl](https://github.com/Azytar/maverickctl)** — An independent control client for Maverick. Apparently, writing a window manager wasn't enough. I also needed a way to talk to it.
-
-## Diagnosis
-
-I don't try to make simple things complicated. I try to understand complicated things well enough to make them simple.
-
-I care about correctness, performance, predictable behavior, and software that does what it's supposed to do.
-
-Not everything needs to be reinvented. But sometimes an innocent question becomes an entire project.
-
-**Simple doesn't mean easy.**
+**[maverickctl](https://github.com/Azytar/maverickctl)** — Independent Unix control and session client.
 
 ---
 
-**Final diagnosis:** I like simple software. Nobody said building it would be simple.
-
-**Prognosis:** Stable, until someone mentions an interesting optimization.
-
-*Stage 2: "I'll just change one little thing."*
-
-*Note: The compiler checks borrowing. Copyright infringement isn't a Rust error.*
+*Understand the system before changing it.*
