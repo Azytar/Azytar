@@ -1,23 +1,21 @@
 # Azytar
 
-![Event horizon — an illustration inspired by my original sketch](assets/event-horizon.svg)
+Linux · Systems programming · Computer graphics
 
-I write systems software for Linux, mostly in Rust. My interests lie where operating systems, graphics and computation meet.
+I write software for Linux, mostly in Rust. I like understanding the layers beneath an application, from window management and process control to text rendering and GPU pipelines.
 
-## Selected work
+## Selected projects
 
-| Project | Engineering focus |
+| Project | What it does |
 | :--- | :--- |
-| [Maverick](https://github.com/Azytar/Maverick) | X11 window management, logical views and scroll layouts. |
-| [Aura](https://github.com/Azytar/Aura) | VT emulation, Unicode, text rendering and Vulkan. |
-| [maverickctl](https://github.com/Azytar/maverickctl) | Independent Unix IPC and session lifecycle control. |
+| [Maverick](https://github.com/Azytar/Maverick) | A tiling window manager for X11 with a scroll-based layout. |
+| [Aura](https://github.com/Azytar/Aura) | A terminal emulator with its own VT core, text stack and Vulkan renderer. |
+| [maverickctl](https://github.com/Azytar/maverickctl) | An independent Unix control client for Maverick. |
 
-## Research interests
+## Interests
 
-Operating systems · Computer graphics · Formal verification · Numerical simulation
+Rust, X11, Vulkan, Unix interfaces, rendering, and systems that are easy to reason about.
 
-## Approach
+---
 
-Small interfaces. Explicit state. Reproducible tests. Measured performance.
-
-I like understanding complicated systems well enough to make them simpler.
+*Simple doesn't mean easy.*
