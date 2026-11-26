@@ -1,39 +1,32 @@
-# Axiom
+# azytar.rs
 
-> **"Everybody lies. But the compiler doesn't."**
->
-> I borrowed the first half from Dr. House. The second half passed the borrow checker.
+```rust
+//! Linux systems and graphics.
 
-## Stage 1: Denial
+const INTERESTS: &[&str] = &[
+    "Rust", "Linux", "X11", "Vulkan",
+];
 
-*"I like keeping things simple."*
+const PRINCIPLES: &[&str] = &[
+    "Understand the system",
+    "Make behavior predictable",
+    "Measure what matters",
+    "Keep interfaces small",
+];
 
-I write Rust software for Linux. I like small systems, understandable code, and knowing how things work.
+fn main() {
+    for principle in PRINCIPLES {
+        println!("{principle}");
+    }
+}
+```
 
-Unfortunately, getting there sometimes involves a suspicious amount of engineering.
+## Modules
 
-## Case history
+| Project | Responsibility |
+| :--- | :--- |
+| [Maverick](https://github.com/Azytar/Maverick) | Window management and layout on X11. |
+| [Aura](https://github.com/Azytar/Aura) | VT emulation, text and Vulkan rendering. |
+| [maverickctl](https://github.com/Azytar/maverickctl) | Unix IPC, commands and session management. |
 
-- **[Maverick](https://github.com/Azytar/Maverick)** — A deliberately minimal X11 window manager in Rust. No desktop environment, no unnecessary extras, no complications. Well, that last part is debatable.
-- **[Aura](https://github.com/Azytar/Aura)** — A terminal emulator with its own VT core, Unicode handling, font rendering, and a Vulkan backend. All that to display text. It seemed reasonable at the time.
-- **[maverickctl](https://github.com/Azytar/maverickctl)** — An independent control client for Maverick. Apparently, writing a window manager wasn't enough. I also needed a way to talk to it.
-
-## Diagnosis
-
-I don't try to make simple things complicated. I try to understand complicated things well enough to make them simple.
-
-I care about correctness, performance, predictable behavior, and software that does what it's supposed to do.
-
-Not everything needs to be reinvented. But sometimes an innocent question becomes an entire project.
-
-**Simple doesn't mean easy.**
-
----
-
-**Final diagnosis:** I like simple software. Nobody said building it would be simple.
-
-**Prognosis:** Stable, until someone mentions an interesting optimization.
-
-*Stage 2: "I'll just change one little thing."*
-
-*Note: The compiler checks borrowing. Copyright infringement isn't a Rust error.*
+I enjoy working close to the boundaries between software and the machine.
